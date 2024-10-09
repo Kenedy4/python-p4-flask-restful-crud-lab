@@ -67,6 +67,7 @@ class PlantByID(Resource):
         return make_response(jsonify({"error": "Plant not found"}), 404)
 
 
+# Add the routes for the Plants and PlantByID resources.
 api.add_resource(PlantByID, '/plants/<int:id>')
 
 
